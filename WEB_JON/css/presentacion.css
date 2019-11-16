@@ -1,0 +1,25 @@
+.contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.datos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Mansalva", cursive;
+}
+.articulo {
+  background-color: coral;
+  margin-top: 1rem;
+}
+body {
+  background-color: palevioletred;
+  background-image: url("../img/2.jpg");
+  background-image: cover;
+}
+.foto {
+  max-width: 80%;
+  text-align: center;
+}

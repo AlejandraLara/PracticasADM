@@ -1,0 +1,36 @@
+@charset "UTF-8";
+*{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+}
+a:active{
+    text-decoration: none
+}
+
+.menunav{
+    background-color: darkorchid;
+    font-size: 1vw;
+    text-align: center;
+    font-family: 'Mansalva';
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+.bodyhome {
+background: url(...WEB_JON/img/2.jpg) no-repeat  center;
+ -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

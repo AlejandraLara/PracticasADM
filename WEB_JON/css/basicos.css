@@ -1,0 +1,23 @@
+/** {
+  outline: thin black solid;
+}
+
+*/
+.container {
+  display: flex;
+  /*  a flex-direction me define la direccion de la caja flex, acepta 4 valores: row, row-inverse, column, column-reverse*/
+  background-color: blueviolet;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.item {
+  padding: 1rem;
+  border: thin solid #000;
+  background-color: pink;
+}
+/*Mobile first*/
+@media screen and (min-width: px) {
+  .item {
+    width: 50%;
+  }
+}

@@ -1,0 +1,97 @@
+/* Custom properties */
+:root {
+  --first-color: rgb(217, 0, 98);
+  --second-color: rgb(20, 25, 45);
+  --third-color: rgb(80, 20, 100);
+
+  --first-alpha-color: rgba(217, 0, 98, 0.75);
+  --second-alpha-color: rgba(20, 25, 45, 0.75);
+  --third-alpha-color: rgba(80, 20, 100, 0.75);
+
+  --link-color: rgb(80, 158, 227);
+  --bg-color: rgb(245, 245 245);
+  --bg-alpha-color: rgb(245, 245, 245, 0.75);
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  color: var(--link-color);
+}
+a:hover {
+  color: var(--first-color);
+  transition: all 0.3s ease-out;
+}
+/* EL espacio en blanco en CSS se llama Selector Descendiente aplica los estilos a l segundo elemento que se encuentre dentro del primero */
+.navbar-brand img {
+  width: auto;
+  height: 48px;
+}
+.bg-dark {
+  background-color: var(--second-color) !important;
+}
+.nav-item:hover {
+  background-color: var(--first-alpha-color);
+  transition: all 0.3s ease-out;
+}
+.nav-link {
+  margin-left: 0.5rem;
+  color: var(--first-color) !important;
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+.nav-link:hover {
+  color: var(--white) !important;
+}
+.nav-item:hover .dropdown-toggle {
+  color: var(--white) !important;
+}
+.dropdown-item {
+  color: var(--third-color);
+  font-weight: bold;
+}
+.dropdown-item:hover {
+  color: var(--third-alpha-color);
+}
+
+.gradient-blue-green {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    124deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 121, 114, 1) 41%,
+    rgba(255, 0, 232, 1) 100%
+  );
+}
+
+.font-120 {
+  font-size: 120%;
+}
+
+/* // Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .nav-item:hover {
+    background-color: transparent;
+  }
+
+  .nav-link {
+    margin-left: 0;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
